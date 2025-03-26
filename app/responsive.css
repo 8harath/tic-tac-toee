@@ -1,0 +1,60 @@
+/* Additional responsive styles */
+@media (max-width: 640px) {
+  .game-board {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    transform: scale(0.8);
+  }
+
+  .game-controls {
+    flex-direction: column;
+  }
+
+  .game-controls button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .game-board {
+    transform: scale(0.7);
+  }
+}
+
+/* Animation for the attribution text */
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  14% {
+    color: #ff7f00;
+  }
+  28% {
+    color: #ffff00;
+  }
+  42% {
+    color: #00ff00;
+  }
+  57% {
+    color: #0000ff;
+  }
+  71% {
+    color: #4b0082;
+  }
+  85% {
+    color: #9400d3;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+.rainbow-text {
+  animation: rainbow 5s linear infinite;
+}
+
